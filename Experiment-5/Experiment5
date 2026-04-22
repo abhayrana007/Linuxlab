@@ -1,0 +1,91 @@
+🐧 Experiment 5: Searching for Files and Text Using grep and Related Commands
+🎯 Aim
+To search for specific patterns and text within files using Linux commands such as grep, fgrep, and related options, and to understand their importance in log analysis, troubleshooting, and automation tasks.
+
+📌 Objectives
+Search for specific text patterns in files using grep 🔍
+
+Use different options of grep for case-insensitive and recursive searching ⚙️
+
+Differentiate between grep, fgrep, and egrep 📋
+
+Apply text searching in real-world scenarios such as log analysis 📊
+
+📖 Theory
+Text Searching in Linux
+Linux treats most data as plain text, making text-processing tools extremely powerful. Searching text efficiently is essential for log file analysis, configuration troubleshooting, security monitoring, and automation scripts.
+
+grep Command
+The grep command searches for a pattern in files or input streams and prints matching lines. The basic syntax is grep [options] pattern filename.
+
+Related Commands
+grep is used for general pattern searching. fgrep (fast grep) searches fixed strings without supporting regular expressions. egrep (extended grep) supports extended regular expressions. In modern Linux systems, egrep and fgrep are implemented using grep -E and grep -F.
+
+🛠️ Commands Used
+The following commands are used in this experiment: grep, grep -i (case-insensitive search), grep -n (show line numbers), grep -r (recursive search), grep -v (invert match), fgrep, cat, ls, mkdir, and nano.
+
+⚙️ Procedure (Step-by-Step)
+Step 1: Log in and open terminal
+Log into your Linux virtual machine and open the terminal.
+
+Step 2: Create a working directory
+Create a directory named grep_lab using the command mkdir grep_lab. Then move into that directory using cd grep_lab.
+
+Step 3: Create a sample text file
+Create a file named sample.txt using the nano editor by typing nano sample.txt.
+
+Step 4: Add content to the file
+Type the following lines into the file:
+Linux is powerful
+Linux is secure
+Bash scripting is useful
+Cyber Security uses Linux
+
+Save the file using Ctrl + O, then exit using Ctrl + X.
+
+Step 5: Display file contents
+Verify the file contents by typing cat sample.txt.
+
+Step 6: Search for a word using grep
+Search for the word "Linux" in sample.txt by typing grep Linux sample.txt. The output will show all lines containing the word Linux.
+
+Step 7: Perform case-insensitive search
+Search for the word "linux" in lowercase using grep -i linux sample.txt. This will display matching lines regardless of case.
+
+Step 8: Display line numbers with matches
+Search for the word "Linux" and display line numbers by typing grep -n Linux sample.txt.
+
+Step 9: Invert the match
+Display all lines that do NOT contain the word "Linux" by typing grep -v Linux sample.txt.
+
+Step 10: Search using fgrep
+Search for the exact fixed string "Bash scripting" using fgrep "Bash scripting" sample.txt.
+
+Step 11: Perform recursive search (if multiple files exist)
+If you have multiple files in a directory, you can search recursively. Create another file by typing echo "Linux is great" > file2.txt. Then search recursively for the word "Linux" in all files of the current directory using grep -r Linux .
+
+Step 12: Try searching with different patterns
+Search for lines starting with "Cyber" using grep "^Cyber" sample.txt. Search for lines ending with "Linux" using grep "Linux$" sample.txt.
+
+📊 Expected Output
+When you type grep Linux sample.txt, you should see:
+Linux is powerful
+Linux is secure
+Cyber Security uses Linux
+
+When you type grep -n Linux sample.txt, you should see:
+1:Linux is powerful
+2:Linux is secure
+4:Cyber Security uses Linux
+
+📊 Results / Observations
+Matching lines containing the search pattern were displayed successfully ✅
+
+Line numbers were shown where applicable ✅
+
+Case-insensitive and inverted searches worked correctly ✅
+
+Recursive search found patterns across multiple files ✅
+
+🎯 Conclusion
+The experiment was completed successfully. Text searching operations were performed using grep and related commands. Hands-on experience was gained in locating specific patterns within files, which is essential for log analysis, troubleshooting, and automation tasks in Linux. ✅
