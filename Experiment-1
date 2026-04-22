@@ -1,0 +1,41 @@
+Linux Lab
+Experiment: Installing and Running a Linux Virtual Machine
+
+Aim
+To install and execute a Linux virtual machine using virtualization software and confirm that it boots correctly.
+
+Objective
+Understand the concept of virtualization.
+
+Learn how to import and run an OVA file.
+
+Verify that a Linux virtual machine functions properly.
+
+Theory
+About Virtualization
+Virtualization is a technique that enables multiple operating systems to run simultaneously on a single physical computer by using software such as Oracle VirtualBox or VMware Workstation. An OVA (Open Virtual Appliance) file contains a pre-built virtual machine, complete with an operating system and predefined configurations. Importing this file into virtualization software allows users to set up a fully functional system quickly, without needing to perform a manual OS installation.
+
+Step‑by‑Step Procedure: Installing Linux Using VMware
+Install VMware Workstation on the host machine.
+
+Launch the VMware Workstation application.
+
+Select "Open a Virtual Machine" from the menu.
+
+Browse and select the desired OVA file.
+
+Import and convert the virtual appliance as prompted.
+
+Review the hardware settings (memory, CPU, storage) and adjust if necessary.
+
+Power on the virtual machine.
+
+Log in to the Linux system and verify that it boots successfully without errors.
+
+Results
+The virtual machine was imported successfully.
+
+The Linux operating system booted without any errors.
+
+The system responded correctly to all commands entered.
+
