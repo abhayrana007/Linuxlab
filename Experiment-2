@@ -1,0 +1,90 @@
+🐧 Experiment: Basic Linux Commands, Run Levels & Help Utilities
+🎯 Aim
+To practice essential Linux commands, understand system run levels (systemd targets), and effectively use Linux help utilities.
+
+📌 Objectives
+Learn fundamental command-line operations in Linux
+
+Understand system run levels (systemd targets)
+
+Use help utilities like man and --help
+
+Improve efficiency with command-line auto‑completion
+
+📖 Theory
+💻 Linux Command Line Interface (CLI)
+The Linux CLI allows users to interact with the operating system by typing commands. Compared to graphical interfaces, it offers faster, more powerful, and more efficient control, especially for system administration and automation tasks.
+
+⚙️ Procedure
+Logged into the Linux virtual machine.
+
+Opened the terminal application.
+
+Executed basic system commands to explore the environment:
+
+pwd – prints the current working directory
+
+ls – lists files and directories
+
+whoami – shows the logged‑in username
+
+date – displays the current date and time
+
+uptime – shows how long the system has been running
+
+Navigated between directories using:
+
+cd /home – moves to the /home directory
+
+cd ~ – returns to the home directory
+
+Accessed manual pages to understand command usage:
+
+man ls – shows the manual for ls
+
+man cd – shows the manual for cd
+
+Pressed q to exit the manual page.
+
+Used help options for commands:
+
+ls --help
+
+systemctl --help
+
+Checked the current system run level / target using:
+
+runlevel – displays previous and current run levels
+
+systemctl get-default – shows the default systemd target
+
+Switched between system targets:
+
+systemctl isolate multi-user.target – switches to command‑line mode (no GUI)
+
+systemctl isolate graphical.target – switches back to GUI mode
+
+Executed traditional runlevel commands (using SysV init style):
+
+sudo init 3 – changes to runlevel 3 (multi‑user without GUI)
+
+sudo init 5 – changes to runlevel 5 (multi‑user with GUI)
+
+Practiced auto‑completion by typing part of a command or path and pressing the Tab key.
+
+Cleared the terminal screen using:
+
+clear
+
+🛠️ Configuration Commands Used
+The following commands were practiced during this experiment:
+pwd, ls, cd, whoami, date, uptime, man, systemctl, runlevel, init, clear
+
+📊 Results
+Basic Linux commands were executed successfully.
+
+Manual pages and --help utilities worked as expected.
+
+The system run level / target was identified and changed correctly.
+
+Commands were executed efficiently, including auto‑completion and screen clearing.
