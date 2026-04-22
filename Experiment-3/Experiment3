@@ -1,0 +1,62 @@
+Here is the revised version of your experiment on File & Directory Management in Linux, using normal text (no highlighted command panels) but with emojis included.
+
+---
+
+# 🐧 Experiment: File & Directory Management in Linux
+
+## 🎯 Aim
+To carry out file and directory management tasks in Linux, and to understand file permissions along with basic text editors.
+
+## 📌 Objectives
+- Navigate within the Linux file system 🧭
+- Create and manage files and directories 📁
+- Understand and modify file permissions 🔐
+- Use text editors such as nano and vi ✏️
+
+## 📖 Theory
+
+### 📂 Linux File System
+The Linux file system follows a hierarchical structure that starts from the root directory /. All files and directories are arranged in a tree-like format, which ensures efficient organization and strong security.
+
+### 📁 Files and Directories
+- Files are used to store data such as text, scripts, or programs. 📄
+- Directories are used to organize files and other directories. 🗂️
+
+### 🔐 File and Directory Permissions
+Linux uses a permission-based model to control access to files and directories:
+- Read (r) allows viewing the contents 👁️
+- Write (w) allows modifying the contents ✍️
+- Execute (x) allows running a file as a program ▶️
+
+Permissions are assigned to three categories: Owner, Group, and Others.
+
+### ✏️ Text Editors
+- nano is a simple and beginner-friendly editor. 🟢
+- vi is an advanced and powerful editor commonly available on Linux systems. 🔧
+
+## ⚙️ Procedure
+
+1. Logged into the Linux virtual machine. 💻
+2. Opened the terminal application. 🖥️
+3. Displayed the current working directory using the command pwd. 📍
+4. Listed files and directories in the current location using ls and ls -l. 📋
+5. Created a new directory named linux_lab using mkdir linux_lab and moved into it using cd linux_lab. 📂
+6. Created two empty files inside the directory using touch file1.txt file2.txt. 📄
+7. Edited file1.txt using the nano editor by typing nano file1.txt. Typed some text, saved the file using Ctrl + O, and exited nano using Ctrl + X. ✏️💾
+8. Edited file2.txt using the vi editor by typing vi file2.txt. Pressed i to enter insert mode, typed some text, then pressed Esc followed by :wq to save and quit. ✏️💾
+9. Displayed the contents of file1.txt using the command cat file1.txt. 👀
+10. Checked file permissions for all files using ls -l. 🔍
+11. Modified file permissions for file1.txt using chmod 755 file1.txt. 🔧
+12. Verified the updated permissions using ls -l file1.txt. ✅
+
+## 🛠️ Configuration Commands Used
+The following commands were practiced during this experiment: pwd, ls, ls -l, cd, mkdir, touch, cat, nano, vi, chmod.
+
+## 📊 Observations / Results
+- Files and directories were created successfully. ✅
+- Text files were edited using both nano and vi editors without errors. ✅
+- File contents were displayed correctly using the cat command. ✅
+- File permissions were viewed and successfully modified using chmod. ✅
+
+## 🎯 Conclusion
+The experiment was completed successfully. ✅ File and directory management operations were performed effectively. The concept of file permissions was understood and applied. Hands-on experience was gained with text editors and basic file handling in Linux. 🐧
