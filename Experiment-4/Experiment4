@@ -1,0 +1,70 @@
+🐧 Experiment 4: Deleting, Copying, Moving, and Renaming Files in Linux
+🎯 Aim
+To perform file operations such as deleting, copying, moving, renaming, and displaying files in Linux, and to understand input/output redirection for managing command outputs.
+
+📌 Objectives
+Create and manage files using Linux commands 📄
+
+Copy, move, rename, and delete files safely 🔄
+
+Display file contents using command-line tools 👀
+
+Use input/output redirection to store command output in files 💾
+
+📖 Theory
+File Management Commands
+Linux offers several commands to manage files. The touch command creates empty files. The cp command copies files or directories. The mv command moves or renames files. The rm command deletes files or directories. The cat command displays file contents.
+
+Input/Output Redirection
+Redirection allows command outputs to be redirected to files instead of the terminal. The > symbol redirects output and overwrites the file. The >> symbol redirects output and appends to the file. The < symbol redirects input. These features are essential for scripting and automation.
+
+🛠️ Commands Used
+The following commands are used in this experiment: touch, cp, mv, rm, cat, > (output redirection), >> (append redirection), ls, mkdir, and echo.
+
+⚙️ Procedure (Step-by-Step)
+Step 1: Log in and open terminal
+Log into your Linux virtual machine and open the terminal.
+
+Step 2: Create a working directory
+Type the command mkdir file_ops and press Enter. Then move into that directory using cd file_ops.
+
+Step 3: Create files using touch
+Create two empty files by typing touch file1.txt file2.txt and pressing Enter.
+
+Step 4: Add content to files using redirection
+Add text to file1.txt using echo "This is file1" > file1.txt. Add text to file2.txt using echo "This is file2" > file2.txt.
+
+Step 5: Display file contents
+View the content of file1.txt by typing cat file1.txt.
+
+Step 6: Copy a file
+Copy file1.txt to a new file called copy_file1.txt using cp file1.txt copy_file1.txt. Verify by listing files using ls.
+
+Step 7: Rename a file
+Rename file2.txt to renamed_file2.txt using mv file2.txt renamed_file2.txt. List files again using ls to confirm.
+
+Step 8: Move a file to another directory
+First create a backup directory using mkdir backup. Then move copy_file1.txt into the backup directory using mv copy_file1.txt backup/. Check the backup directory using ls backup/.
+
+Step 9: Append content to a file
+Add more text to file1.txt without deleting existing content using echo "Additional content" >> file1.txt. View the updated file using cat file1.txt.
+
+Step 10: Delete a file
+Delete renamed_file2.txt using rm renamed_file2.txt. List files using ls to confirm deletion.
+
+Step 11: Verify all changes
+List all files in the current directory using ls. List files inside the backup directory using ls backup/.
+
+📊 Results / Observations
+Files were created successfully using touch. ✅
+
+Content was added using redirection operators. ✅
+
+Files were copied, renamed, and moved successfully. ✅
+
+Content was appended without overwriting. ✅
+
+Files were deleted using the rm command. ✅
+
+🎯 Conclusion
+The experiment was completed successfully. Linux file operations including copying, moving, renaming, deleting files, and output redirection were performed using command-line utilities. Hands-on experience was gained in safe file management and redirection techniques.
