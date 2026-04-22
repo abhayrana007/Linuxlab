@@ -1,0 +1,54 @@
+🧪 Experiment: Exploring Virtual Terminals, Display Managers, and the X Window System
+🎯 Aim
+To explore virtual terminals, display managers, the X Window System, and switching between text-based and graphical interfaces in Linux.
+
+📌 Objectives
+To understand the concept of virtual terminals in Linux.
+To switch between multiple terminal sessions.
+To study display managers and graphical login mechanisms.
+To identify X clients and window managers.
+📖 Theory
+🔹 Virtual Terminals
+Linux provides multiple virtual terminals (VTs), allowing users to run multiple sessions simultaneously in text mode. These are especially useful for troubleshooting and system recovery.
+
+Common shortcuts:
+
+Ctrl + Alt + F1 to F6 – Text-based terminals
+Ctrl + Alt + F7 (or sometimes F1/F2 depending on distro) – Graphical interface
+🔹 Display Manager
+A display manager provides a graphical login interface and manages user sessions.
+
+Examples: GDM (GNOME), LightDM, SDDM (KDE).
+🔹 X Window System (X11)
+The X Window System (X11) is responsible for handling graphical display, keyboard input, and mouse interactions. It enables graphical applications to run on Linux systems.
+
+🔹 X Clients & Window Managers
+X Clients: Graphical applications (browsers, editors) that communicate with the X server.
+Window Manager: Controls the appearance, placement, and behavior of windows (e.g., GNOME, KDE, Xfce, Openbox).
+🛠️ Step-by-Step Procedure
+Login: Logged into the Linux system and opened the terminal.
+Identify Terminal: Checked the current terminal:
+tty
+Switch Session: Switched to another virtual terminal using Ctrl + Alt + F2. Logged in again to verify access.
+Return to GUI: Switched back to the graphical interface using Ctrl + Alt + F1 or Ctrl + Alt + F7.
+Monitor Users: Checked logged-in users:
+who
+w
+Display Manager Status: Checked the status of the display manager:
+systemctl status gdm
+Environment Check: Verified the X session environment variable:
+echo $DISPLAY
+Process List: Listed X-related processes:
+ps -e | grep X
+💻 Configuration Commands
+The following commands were used during the experiment: tty, who, w, systemctl, echo $DISPLAY, ps, startx
+
+📊 Observations / Results
+Successfully switched between multiple virtual terminals.
+Identified the current terminal using tty.
+Displayed logged-in users accurately.
+Verified the status of the display manager.
+Confirmed the X session environment variable.
+Displayed running X-related processes.
+✅ Conclusion
+The experiment was successfully completed. Virtual terminals, display managers, X clients, and window managers were explored effectively. This experiment provided practical understanding of Linux system interfaces and graphical session management.
